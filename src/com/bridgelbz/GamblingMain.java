@@ -77,6 +77,12 @@ public class GamblingMain {
         System.out.println( "\nluckiest Day : Day " +maxWinDay + " gambler won maximum bets which is " +maxWin);
         System.out.println( "Unluckiest Day : Day " +maxlooseDay + " gambler looses maximum bets which is " +maxLoose);
 
+        if(totalWin > totalLoose){
+            System.out.println("\nIn whole month Gambler Won " + (totalWin-totalLoose) + "$ so gambler will gamble in next month");
+        }else{
+            System.out.println("\nIn whole month Gambler lost " + (totalLoose - totalWin) + "$ so gambler will stop gambling from next month");
+        }
+
 
     }
 }
